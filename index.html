@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CLIMA-AI | Smart Luxury Wearable</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #004e92;
+      --green: #00c9a7;
+      --dark: #111;
+      --light: #f8f9fa;
+      --soft-white: #ffffffee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #cdeffd, #d6fff5);
+      color: #111;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--blue);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: top 0.4s;
+      z-index: 999;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #004e92, #00c9a7);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--blue);
+    }
+
+    .solution-text {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      background-color: var(--soft-white);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--green);
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Sticky header hide/show */
+    .hide {
+      top: -100px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="mainHeader">
+    <h1>CLIMA-AI</h1>
+    <nav>
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#features">Features</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Luxury Meets Smart Comfort</h2>
+    <p>Introducing <strong>CLIMA-AI</strong> — the world’s first AI-powered adaptive clothing designed to redefine personal comfort in all weather, all moments, always on.</p>
+  </section>
+
+  <section id="problem">
+    <h2 class="section-title">The Problem</h2>
+    <p class="solution-text">From sweltering heat to freezing winds, traditional clothing offers no flexibility or intelligence. The discomfort caused by temperature extremes leads to lost productivity, fatigue, and health risks — especially for outdoor workers, children, athletes, and the elderly. Isn’t it time our clothing evolved with us?</p>
+  </section>
+
+  <section id="solution">
+    <h2 class="section-title">Our Solution</h2>
+    <p class="solution-text">
+      <strong>CLIMA-AI</strong> is not just wearable — it's intelligent comfort engineering. Embedded with state-of-the-art AI sensors and micro-actuators, our apparel senses your body temperature, sweat, environment, and activity. It learns your comfort thresholds and adapts instantly, delivering warmth or coolness exactly where you need it.<br><br>
+      Unlike anything before, CLIMA-AI combines **cutting-edge Edge AI**, **smart fabrics**, and **personal thermal control zones** into a sleek, lightweight, fashionable layer — no jackets, no fans, no compromises. Controlled automatically or through a companion app, it’s fashion that thinks ahead.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2 class="section-title">Key Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🔥❄ Intelligent Thermal Control</h3>
+        <p>Real-time automatic heating or cooling based on your conditions, not guesswork.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 AI Learning Engine</h3>
+        <p>Gets smarter over time — adjusting to your activity, environment, and preferences.</p>
+      </div>
+      <div class="card">
+        <h3>📱 App Control + Insights</h3>
+        <p>Optional mobile app gives you full control and health/environment insights.</p>
+      </div>
+      <div class="card">
+        <h3>💎 Sleek & Lightweight</h3>
+        <p>Designed to feel as good as it looks — no bulk, no wires visible, no fuss.</p>
+      </div>
+      <div class="card">
+        <h3>🔋 Smart Power Efficiency</h3>
+        <p>Uses energy only when needed. Optimized for all-day wear on one charge.</p>
+      </div>
+      <div class="card">
+        <h3>🧥 Future of Fashion</h3>
+        <p>Futuristic, minimalist, and sustainable. Wearable intelligence has arrived.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 CLIMA-AI. Engineered for humans. Designed for tomorrow.</p>
+  </footer>
+
+  <script>
+    // Hide/show header on scroll
+    let lastScrollTop = 0;
+    const header = document.getElementById("mainHeader");
+
+    window.addEventListener("scroll", function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        header.classList.add("hide");
+      } else {
+        header.classList.remove("hide");
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</body>
+</html>
