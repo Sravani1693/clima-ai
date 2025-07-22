@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CLIMA-AI | Smart Luxury Wearable</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>CLIMA-AI | Luxury Smart Wear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --blue: #004e92;
       --green: #00c9a7;
       --dark: #111;
       --light: #f8f9fa;
-      --soft-white: #ffffffee;
+      --white: #ffffff;
     }
 
     * {
@@ -21,7 +21,7 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: linear-gradient(to right, #cdeffd, #d6fff5);
       color: #111;
       scroll-behavior: smooth;
@@ -37,19 +37,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: top 0.4s;
       z-index: 999;
+      transition: top 0.3s;
     }
 
     header h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 700;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 1.5rem;
+      margin-left: 2rem;
       font-weight: 500;
       transition: opacity 0.3s;
     }
@@ -65,7 +65,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 6rem 2rem;
       background: linear-gradient(to right, #004e92, #00c9a7);
       color: white;
     }
@@ -73,77 +73,93 @@
     .hero h2 {
       font-size: 3rem;
       font-weight: 700;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .hero p {
       max-width: 700px;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       line-height: 1.7;
     }
 
     section {
-      padding: 5rem 2rem;
+      padding: 4rem 2rem;
       max-width: 1200px;
       margin: auto;
     }
 
     .section-title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 600;
       margin-bottom: 1.5rem;
       color: var(--blue);
+      text-align: center;
     }
 
     .solution-text {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       line-height: 1.8;
-      background-color: var(--soft-white);
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      background-color: var(--white);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: auto;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     .card {
       background: white;
-      padding: 2rem;
+      padding: 2.5rem;
       border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
     }
 
     .card h3 {
       color: var(--green);
-      margin-bottom: 0.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #333;
     }
 
     footer {
       background-color: var(--dark);
       color: white;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
+      padding: 2.5rem;
+      font-size: 1rem;
+      margin-top: 5rem;
     }
 
-    /* Sticky header hide/show */
+    /* Header hide/show on scroll */
     .hide {
       top: -100px;
     }
 
     @media (max-width: 768px) {
       .hero h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+      }
+
+      .solution-text {
+        font-size: 1rem;
+        padding: 2rem;
       }
     }
   </style>
@@ -153,66 +169,67 @@
   <header id="mainHeader">
     <h1>CLIMA-AI</h1>
     <nav>
-      <a href="#problem">Problem</a>
-      <a href="#solution">Solution</a>
+      <a href="#problem">The Problem</a>
+      <a href="#solution">Our Solution</a>
       <a href="#features">Features</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Luxury Meets Smart Comfort</h2>
-    <p>Introducing <strong>CLIMA-AI</strong> — the world’s first AI-powered adaptive clothing designed to redefine personal comfort in all weather, all moments, always on.</p>
+    <h2>The Future of Smart Comfort</h2>
+    <p>Discover CLIMA-AI — the luxury wearable clothing that adjusts to your body’s needs, keeping you in perfect comfort no matter the temperature.</p>
   </section>
 
   <section id="problem">
-    <h2 class="section-title">The Problem</h2>
-    <p class="solution-text">From sweltering heat to freezing winds, traditional clothing offers no flexibility or intelligence. The discomfort caused by temperature extremes leads to lost productivity, fatigue, and health risks — especially for outdoor workers, children, athletes, and the elderly. Isn’t it time our clothing evolved with us?</p>
+    <h2 class="section-title">Why CLIMA-AI?</h2>
+    <p class="solution-text">
+      Traditional clothing can’t adapt to the varying temperatures and body conditions we face. Whether it’s the summer sun or winter chill, existing clothes often leave us feeling uncomfortable and inefficient. It’s time to experience the future of wearable technology.
+    </p>
   </section>
 
   <section id="solution">
-    <h2 class="section-title">Our Solution</h2>
+    <h2 class="section-title">Experience the Innovation</h2>
     <p class="solution-text">
-      <strong>CLIMA-AI</strong> is not just wearable — it's intelligent comfort engineering. Embedded with state-of-the-art AI sensors and micro-actuators, our apparel senses your body temperature, sweat, environment, and activity. It learns your comfort thresholds and adapts instantly, delivering warmth or coolness exactly where you need it.<br><br>
-      Unlike anything before, CLIMA-AI combines **cutting-edge Edge AI**, **smart fabrics**, and **personal thermal control zones** into a sleek, lightweight, fashionable layer — no jackets, no fans, no compromises. Controlled automatically or through a companion app, it’s fashion that thinks ahead.
+      CLIMA-AI isn't just clothing—it's an experience. Designed with the latest AI technology, it intelligently adjusts your body temperature in real-time, ensuring comfort wherever you go. Whether you’re at work, traveling, or relaxing, CLIMA-AI learns your preferences, adapting to your unique needs without lifting a finger.
     </p>
   </section>
 
   <section id="features">
-    <h2 class="section-title">Key Features</h2>
+    <h2 class="section-title">What Makes CLIMA-AI Special?</h2>
     <div class="grid">
       <div class="card">
-        <h3>🔥❄ Intelligent Thermal Control</h3>
-        <p>Real-time automatic heating or cooling based on your conditions, not guesswork.</p>
+        <h3>🔥❄ Adaptive Comfort</h3>
+        <p>Real-time temperature adjustments based on your environment and body.</p>
       </div>
       <div class="card">
-        <h3>🧠 AI Learning Engine</h3>
-        <p>Gets smarter over time — adjusting to your activity, environment, and preferences.</p>
+        <h3>🧠 AI Powered</h3>
+        <p>Continuous learning to adapt to your daily activity and preferences.</p>
       </div>
       <div class="card">
-        <h3>📱 App Control + Insights</h3>
-        <p>Optional mobile app gives you full control and health/environment insights.</p>
+        <h3>📱 Seamless Control</h3>
+        <p>Control everything via an intuitive mobile app for maximum ease.</p>
       </div>
       <div class="card">
-        <h3>💎 Sleek & Lightweight</h3>
-        <p>Designed to feel as good as it looks — no bulk, no wires visible, no fuss.</p>
+        <h3>🔋 Energy Efficient</h3>
+        <p>Save energy with smart zones that activate only when necessary.</p>
       </div>
       <div class="card">
-        <h3>🔋 Smart Power Efficiency</h3>
-        <p>Uses energy only when needed. Optimized for all-day wear on one charge.</p>
+        <h3>💎 Premium Design</h3>
+        <p>Lightweight, sleek, and durable — a stylish, modern wardrobe essential.</p>
       </div>
       <div class="card">
-        <h3>🧥 Future of Fashion</h3>
-        <p>Futuristic, minimalist, and sustainable. Wearable intelligence has arrived.</p>
+        <h3>💚 Future of Fashion</h3>
+        <p>The luxury smart garment that takes you into the next generation of wearables.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 CLIMA-AI. Engineered for humans. Designed for tomorrow.</p>
+    <p>© 2025 CLIMA-AI | Designed for the future, powered by intelligence.</p>
   </footer>
 
   <script>
-    // Hide/show header on scroll
+    // Sticky header hide/show logic
     let lastScrollTop = 0;
     const header = document.getElementById("mainHeader");
 
@@ -228,3 +245,4 @@
   </script>
 </body>
 </html>
+
